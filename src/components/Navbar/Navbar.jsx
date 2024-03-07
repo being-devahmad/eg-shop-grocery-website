@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,13 +35,13 @@ const Navbar = () => {
 
           {/* Nav Items */}
           <ul className="hidden md:flex items-center text-lg justify-center">
-            <li className="mr-5 text-gray-500 hover:text-black cursor-pointer">
+            <Link to={'/'} className="mr-5 text-gray-500 hover:text-black cursor-pointer">
               Home
-            </li>
-            <li className="mr-5 text-gray-500 hover:text-black cursor-pointer">
+            </Link>
+            <Link to={'/shop'} className="mr-5 text-gray-500 hover:text-black cursor-pointer">
               Shop
-            </li>
-            <li className="mr-5 relative text-gray-500 hover:text-black cursor-pointer flex justify-center items-center">
+            </Link>
+            <Link to={'/about'} className="mr-5 relative text-gray-500 hover:text-black cursor-pointer flex justify-center items-center">
               <span>Pages</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,10 +57,10 @@ const Navbar = () => {
                   d="m19.5 8.25-7.5 7.5-7.5-7.5"
                 />
               </svg>
-            </li>
-            <li className="mr-5 text-gray-500 hover:text-black cursor-pointer">
+            </Link>
+            <Link to={'/contact'} className="mr-5 text-gray-500 hover:text-black cursor-pointer">
               Contact
-            </li>
+            </Link>
           </ul>
 
           {/* Contact nav */}
