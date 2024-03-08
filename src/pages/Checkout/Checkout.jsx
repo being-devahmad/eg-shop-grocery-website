@@ -156,7 +156,7 @@ const Checkout = () => {
 
                     <div>
                         {/* Order summary */}
-                        <div className='border pt-12 pb-4 px-8'>
+                        <div className='border pt-12 pb-4 px-8 mt-4'>
                             <p className='text-3xl font-semibold'>Order Summary</p>
                             {
                                 cartProducts.map((product) => {
@@ -164,8 +164,11 @@ const Checkout = () => {
                                     return (
                                         <>
                                             <div className='flex justify-between items-center p-3 mb-2'>
-                                                <div>
-                                                    <img src={image} className='w-20 h-24' alt="" />
+                                                <div className="h-14 w-14 flex-shrink-0 overflow-hidden rounded-md border">
+                                                    <img
+                                                        src={image}
+                                                        className="h-full w-full object-cover object-center"
+                                                    />
                                                 </div>
                                                 <div>
                                                     <p>{name}</p>

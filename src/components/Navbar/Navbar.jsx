@@ -41,8 +41,8 @@ const Navbar = () => {
             <Link to={'/shop'} className="mr-5 text-gray-500 hover:text-black cursor-pointer">
               Shop
             </Link>
-            <Link to={'/about'} className="mr-5 relative text-gray-500 hover:text-black cursor-pointer flex justify-center items-center">
-              <span>Pages</span>
+            <Link to={'/about'} className="mr-5 relative text-gray-500 hover:text-black cursor-pointer flex justify-center items-center">About
+              {/* <span>Pages</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -56,7 +56,10 @@ const Navbar = () => {
                   strokeLinejoin="round"
                   d="m19.5 8.25-7.5 7.5-7.5-7.5"
                 />
-              </svg>
+              </svg> */}
+            </Link>
+            <Link to={'/cart'} className="mr-5 text-gray-500 hover:text-black cursor-pointer">
+              Shop
             </Link>
             <Link to={'/contact'} className="mr-5 text-gray-500 hover:text-black cursor-pointer">
               Contact
@@ -90,30 +93,31 @@ const Navbar = () => {
           {/* Responsive Menu */}
           {isMenuOpen && (
             <div className="absolute top-16 right-0 bg-white p-4 rounded-md md:hidden z-50">
-              <a
+              <Link to={'/'}
                 className="block text-gray-800 font-semibold mb-2 hover:text-gray-900"
-                href="/"
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link to={'/shop'}
                 className="block text-gray-800 font-semibold mb-2 hover:text-gray-900"
-                href="/"
               >
                 Shop
-              </a>
-              <a
-                className="block text-gray-800 font-semibold mb-2 hover:text-gray-900 relative"
-                href="/"
-              >
-                Pages
-              </a>
-              <a
+              </Link>
+              <Link to={'/cart'}
                 className="block text-gray-800 font-semibold mb-2 hover:text-gray-900"
-                href="/"
+              >
+                Cart
+              </Link>
+              <Link to={'/about'}
+                className="block text-gray-800 font-semibold mb-2 hover:text-gray-900 relative"
+              >
+                About
+              </Link>
+              <Link to={'/contact'}
+                className="block text-gray-800 font-semibold mb-2 hover:text-gray-900"
               >
                 Contact
-              </a>
+              </Link>
             </div>
           )}
         </div>
