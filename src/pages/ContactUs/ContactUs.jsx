@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import innerBannr from "../../assets/inner-banner.jpg";
 
 const ContactUs = () => {
+
   const branches = [
     {
       id: 1,
@@ -29,6 +30,7 @@ const ContactUs = () => {
       web: "www.yourwebsite.com"
     }
   ]
+
   return (
     <>
       <section>
@@ -102,7 +104,7 @@ const ContactUs = () => {
       {/* Branches */}
 
       <section className='container mx-auto mt-12 mb-8'>
-        <div className='grid grid-cols-3 gap-6'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
           {
             branches.map((branch, index) => {
               const { id, name, address, country, phone, email, web } = branch

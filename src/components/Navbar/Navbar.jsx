@@ -16,9 +16,9 @@ const Navbar = () => {
       <header className="bg-[#F0F2F5] relative">
         <div className="container mx-auto flex justify-between p-5 items-center">
           {/* Logo */}
-          <div>
+          <Link to={'/'}>
             <img src={logo} />
-          </div>
+          </Link>
 
           {/* Toggle btn */}
           {isMenuOpen ? (
@@ -41,6 +41,9 @@ const Navbar = () => {
             <Link to={'/shop'} className="mr-5 text-gray-500 hover:text-black cursor-pointer">
               Shop
             </Link>
+            <Link to={'/cart'} className="mr-5 text-gray-500 hover:text-black cursor-pointer">
+              Cart
+            </Link>
             <Link to={'/about'} className="mr-5 relative text-gray-500 hover:text-black cursor-pointer flex justify-center items-center">About
               {/* <span>Pages</span>
               <svg
@@ -57,9 +60,6 @@ const Navbar = () => {
                   d="m19.5 8.25-7.5 7.5-7.5-7.5"
                 />
               </svg> */}
-            </Link>
-            <Link to={'/cart'} className="mr-5 text-gray-500 hover:text-black cursor-pointer">
-              Shop
             </Link>
             <Link to={'/contact'} className="mr-5 text-gray-500 hover:text-black cursor-pointer">
               Contact

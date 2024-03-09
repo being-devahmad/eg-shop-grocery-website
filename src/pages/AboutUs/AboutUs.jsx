@@ -50,11 +50,11 @@ const AboutUs = () => {
                 {/* AboutUs Description */}
 
                 <div class="container mx-auto ">
-                    <div className='grid grid-cols-2 my-24 mx-12'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 my-24 mx-12'>
                         <div className='rounded-lg'>
                             <img src={aboutBg} className='rounded-lg' alt="" />
                         </div>
-                        <div className='px-14 py-8 rounded-2xl shadow-lg bg-[#F0F2F5]'>
+                        <div className='px-14 py-8 md:mt-0 mt-4 rounded-2xl shadow-lg bg-[#F0F2F5]'>
                             <p>Welcome to EG Shop</p>
                             <p className='text-3xl font-semibold leading-10'>What can a great About <br /> Us page do for your <br />business ?</p>
                             <p>An About Us page helps your company make a good first impression, and is critical for building customer trust and loyalty. An About Us page should make sure to cover basic information about the store and its founders, explain the company's purpose and how it differs from the competition, and encourage discussion and interaction.</p>
